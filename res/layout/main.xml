@@ -4,10 +4,14 @@
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
         >
-    <TextView
+    <ListView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Hello World, MainActivity"
-            />
+            android:id="@+id/listView"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/generate"
+            android:id="@+id/button" android:layout_gravity="left|center_vertical"/>
 </LinearLayout>
 
