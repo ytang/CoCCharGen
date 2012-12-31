@@ -41,9 +41,9 @@ public class MainActivity extends Activity {
         );
     }
 
-    int roll(int numDices, int numFaces, int adjustment) {
+    int roll(int numDice, int numFaces, int adjustment) {
         int sum = 0;
-        for (int i = 0; i < numDices; ++i) {
+        for (int i = 0; i < numDice; ++i) {
             sum += rand.nextInt(numFaces) + 1;
         }
         sum += adjustment;
@@ -70,7 +70,7 @@ public class MainActivity extends Activity {
         }
     }
 
-    void rollDices() {
+    void rollDice() {
         strength = roll(3, 6, 0);
         constitution = roll(3, 6, 0);
         power = roll(3, 6, 0);
@@ -123,7 +123,7 @@ public class MainActivity extends Activity {
     }
 
     void generateCharacter() {
-        rollDices();
+        rollDice();
         populateList();
     }
 
